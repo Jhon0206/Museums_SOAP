@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Museums SOAP
+  datasource:
+    url: jdbc:mysql://localhost:3306/museums_db
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  webservices:
+    path: /ws
